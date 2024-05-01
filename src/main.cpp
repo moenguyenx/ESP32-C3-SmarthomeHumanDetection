@@ -14,11 +14,11 @@ void setup() {
   connectionStatus status = establishConnection(ssid, password);
   if (status == E_CONNECTED)
   {
-    Serial.println("WiFi connected successfully!");
+    Serial.println("WiFi connected!");
   }
   else
   {
-    Serial.println("Unable to connect!");
+    Serial.println("Failed to connect!");
   }
 }
 
