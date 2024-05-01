@@ -12,16 +12,16 @@
 /*======================================================================================================================
  *                                              DEFINES AND MACROS
 ======================================================================================================================*/
-#define SENSOR_PIN      8
+#define BUTTON_PIN  4
 
 /*======================================================================================================================
  *                                                      ENUMS
 ======================================================================================================================*/
-typedef enum 
+typedef enum
 {
-    E_UNDETECTED,
-    E_DETECTED
-} dectectionStatus;
+    E_PRESSED,
+    E_ERROR
+} buttonState;
 /*======================================================================================================================
  *                                              STRUCTURES AND OTHER TYPEDEFS
 ======================================================================================================================*/
@@ -35,11 +35,12 @@ typedef enum
 ======================================================================================================================*/
 
 /*
-* @brief    Gather infomation from LD2410 sensor
-* @details  Read analog signal from sensor
+* @brief    Check button state
+* @details  Attempt to connect to the specified WiFi network using the provided credentials.
 * 
 * @param    None
-* @pre      N/A
+* @return   None
 */
-dectectionStatus readSensorData(void);
+void checkButton(void);
+
 
