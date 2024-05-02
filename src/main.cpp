@@ -11,11 +11,11 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
   pinMode(SENSOR_PIN, INPUT);
-
+  
   // Attach button to external interupt
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   attachInterrupt(BUTTON_PIN, checkButton, FALLING);
-  
+
   connectionStatus status = establishConnection(ssid, password);
   if (status == E_CONNECTED)
   {

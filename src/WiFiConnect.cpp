@@ -18,9 +18,12 @@ connectionStatus establishConnection(const char* ssid, const char* password)
     Serial.println("");
 
     // Check if connection is successful
-    if (WiFi.status() == WL_CONNECTED) {
+    if (WiFi.status() == WL_CONNECTED) 
+    {
         status = E_CONNECTED; // Connected to WiFi
-    } else {
+    } 
+    else
+    {
         status = E_DISCONNECTED; // Failed to connect to WiFi
     }
 
