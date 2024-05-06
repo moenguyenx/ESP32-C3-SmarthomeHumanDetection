@@ -2,5 +2,5 @@
 
 void checkButton()
 {
-
+    Serial.println("Clicked");
 }
