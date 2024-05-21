@@ -43,4 +43,14 @@ typedef enum
 */
 void checkButton(void);
 
+/*
+* @brief    Config button 
+* @details  Assign pin and interrupt to button.
+* 
+* @param    None
+* @return   None
+*/
+void buttonSetup(void);
+
+
 
