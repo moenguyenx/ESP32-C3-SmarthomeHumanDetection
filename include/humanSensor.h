@@ -43,3 +43,11 @@ typedef enum
 */
 dectectionStatus readSensorData(void);
 
+/*
+* @brief    Config LD2410 sensor
+* @details  Read analog signal from sensor
+* 
+* @param    Sensor pin
+* @pre      N/A
+*/
+void sensorSetup(int PIN_NUM);

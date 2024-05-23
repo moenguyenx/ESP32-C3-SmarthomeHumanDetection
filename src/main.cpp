@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "freertos/FreeRTOS.h"
-#include "humanDetect.h"
+#include "humanSensor.h"
 #include "WiFiConnect.h"
 #include "button.h"
 
@@ -19,9 +19,9 @@ void setup() {
   {
     Serial.println("Failed to connect!");
   }
-  pinMode(SENSOR_PIN, INPUT);
+  sensorSetup(SENSOR_PIN);
   
-  buttonSetup();
+  buttonSetup(BUTTON_PIN);
 }
 
 void loop() {

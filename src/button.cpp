@@ -1,8 +1,8 @@
 #include "button.h"
 
-void buttonSetup()
+void buttonSetup(int PIN_NUM)
 {
-    pinMode(BUTTON_PIN, INPUT_PULLUP);
+    pinMode(PIN_NUM, INPUT_PULLUP);
     attachInterrupt(BUTTON_PIN, checkButton, FALLING);
 }
 
